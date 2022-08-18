@@ -40,9 +40,20 @@ const encontraFogao = produtos.find(produto => produto === 'fogao')
 console.log(encontraFogao)
 
 //sort - ordena o array
+const num = [34, 45, 76, 90, 55, 110]
 
+const crescente = num.sort((a,b) => a-b)
+console.log(crescente)
 
+const decrescente = num.sort((a,b) => b-a)
+console.log(decrescente)
 
 //reduce - reduz nosso array a um resultado de uma operação matemática
+const numbers = [1, 34, 35]
+
+const soma = numbers.reduce((valorAnterior, valorAtual) => {
+    return valorAnterior + valorAtual
+})
+console.log(soma)
 
 
