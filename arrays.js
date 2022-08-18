@@ -16,18 +16,30 @@ for (let i = 0; i < alunasXp.length; i++){
 }
 
 //Map - retorna um novo array sem alterar o array original criando uma cópia com as alterações que desejamos.
+const alunas = ['Paula', 'Maria', 'Estela', 'Clara']
 
-const alunas 
-
-
-
-//Filter
+alunas.map(aluna => console.log(aluna))
 
 
-//find
+//Filter - retorna um novo array com os elementos filtrados
+const numeros = [34, 35, 67, 90, 55, 76]
 
+const numerosImpares = numeros.filter(numero => numero%2 != 0)
+console.log(numerosImpares)
 
-//sort - ordenação 
+const numerosPares = numeros.filter(numero => numero%2 == 0)
+console.log(numerosPares)
+
+//find - encontra e retorna o primeiro elenmento que achar igual ao elemento passado por parâmetro
+const produtos = ['geladeira', 'fogao', 'cama','mesa']
+
+const encontraCama = produtos.find(produto => produto === 'cama')
+console.log(encontraCama)
+
+const encontraFogao = produtos.find(produto => produto === 'fogao')
+console.log(encontraFogao)
+
+//sort - ordena o array
 
 
 
